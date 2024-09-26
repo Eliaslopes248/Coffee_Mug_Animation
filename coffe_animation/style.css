@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(58, 108, 123);
+    overflow: hidden;
+}
+
+.plate{
+    width: 500px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(236, 230, 230);
+    transform: translateY(400px) translateX(200px);
+    box-shadow: 9px 7px 12px rgb(19, 18, 18);
+}
+
+.ring{
+    width: 480px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgb(209, 208, 208);
+    transform: translateY(10px)translateX(8px);
+}
+
+.cup{
+    width: 310px;
+    height: 430px;
+    background-color: rgb(246, 243, 243);
+    transform: translateY(-335px) translateX(90px);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40% ;
+    box-shadow: 0px 0px 0px gray;
+    
+}
+
+.holder{
+    transform: translateY(190px)
+    translateX(15%)
+}
+
+.topcup{
+    width: 312px;
+    height: 115px;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(110, 110, 110),white);
+    position: absolute;
+    transform: translateY(-817px) translateX(89px);
+    overflow: hidden;
+}
+
+.coffee{
+    width: 312px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: rgb(184, 125, 90);
+    position: absolute;
+    transform: translateY(30px);
+}
+
+.shadow {
+    width: 100px; /* Set width as needed */
+    height: 50px; /* Set height as needed */
+    background-color: rgba(94, 93, 93, 0.5);
+    box-shadow: 0px 0px 80px 80px rgba(94, 93, 93, 0.5); /* Correct box-shadow syntax */
+    border-radius: 50%;
+    transform: translateY(-390px) translateX(250px);
+}
+
+.smokebox{
+    border: 0px solid;
+    width: 310px;
+    height: 250px;
+    transform: translateY(-122vh) translateX(29%);
+    display: flex;
+    justify-content: center;
+}
+
+.smokebox span{
+    width: 50px; /* Set width as needed */
+    height: 100px; /* Set height as needed */
+    border-radius: 50%;
+    background-color: rgb(232, 232, 232);
+    animation: animate 3s  linear infinite;
+    animation-delay: calc(var(--i) * -.8s);
+    filter: blur(8px);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(140px)scale(1);
+        filter: blur(10px);
+        opacity: 0;
+    }
+
+    25%{
+        transform: translateY(90px) scale(2);
+        filter: blur(10px);
+        
+        opacity: .5;
+    }
+
+    100%{
+        transform: translateY(-300px)scale(5);
+        filter: blur(6px);
+        opacity: 1;
+    }
+}
+
+.handle{
+    clip-path: circle(50% at 0 48%);
+    background-color: rgb(246, 243, 243);
+    width: 150px;
+    height: 230px;
+    position: absolute;
+    transform: translateY(-92vh) translateX(29vw);
+
+}
+
+.hole{
+    clip-path: circle(50% at 0 48%);
+    background-color: rgb(164, 163, 163);
+    width: 100px;
+    height: 190px;
+    position: absolute;
+    transform: translateY(18px)translateX(5px);
+}
+
+.bg{
+    clip-path: circle(50% at 0 48%);
+    background-color: rgb(58, 108, 123);
+    width: 120px;
+    height: 175px;
+    position: absolute;
+    transform: translateY(25px)translateX(5px);
+}
